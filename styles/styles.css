@@ -5,7 +5,7 @@
   font-style: normal;
   line-height: 1.375; 
 }
-.page-header{
+.page-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -28,6 +28,7 @@
   }
 }
 
+
 .page-header__container {
   box-sizing: border-box;
   position: relative;
@@ -40,7 +41,7 @@
 
 .page-header__logo {
   display: inline-block;
-  margin-left: 293px;
+  margin-right: 237px;
   width: 202px;
   height: 147px;
 }
@@ -52,7 +53,7 @@
 
 .page-header__nav {
   display: inline-block;
-  margin-left: 237px;
+  margin-right: 230px;
 }
 
 .page-header__nav-link {
@@ -66,8 +67,8 @@
 .page-footer {}
 
 .page-header_user-btn {
-  margin-left: 307px;
   box-sizing: border-box;
+  text-decoration: none;
   padding: 15px 40px;
   background-color: transparent;
   border: 1px solid #1F1E1E;
