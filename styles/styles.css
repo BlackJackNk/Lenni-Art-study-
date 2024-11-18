@@ -38,21 +38,6 @@ body {
   }  
 }
 
-/*Блок создаёт Блюр в шапке head (использованли в начале обучения до flex)*/
-/*.page-header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;  
-  height: 100%;    
-  background-color: rgba(222, 222, 222, 0.5);
-  @supports (backdrop-filter: blur(10px)) {
-    backdrop-filter: blur(10px); 
-    background-color: rgba(222, 222, 222, 0.5);  
-  }
-}*/
-
 .page-header__container {
   box-sizing: border-box;
   display: flex;
@@ -187,19 +172,6 @@ body {
   align-items: center;
   width: 202px;
 }
-
-/*Блок создаёт кнопку в шапке head (использованли в начале обучения до flex)*/
-/*.page-header_user-btn {
-  box-sizing: border-box;
-  text-decoration: none;
-  padding: 15px 40px;
-  background-color: transparent;
-  border: 1px solid #1F1E1E;
-  font-size: 16px;
-  line-height: normal;
-  font-weight: 600;
-  color: #1F1E1E;
-}*/
 
 .section-title {
   box-sizing: border-box;
