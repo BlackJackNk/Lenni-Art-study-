@@ -231,6 +231,7 @@ body {
 }
 
 .card-event__title:hover {
+  text-decoration: underline red;
   color: #bc3324
 }
 
