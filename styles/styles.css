@@ -213,7 +213,10 @@ body {
 .listing__card-event {
   max-width: 405px;
   width: calc(33.333% - 40px);
+}
 
+.card-event__link{
+  text-decoration: none;
 }
 
 .card-event__title {
@@ -236,6 +239,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21.79px;
+  text-decoration: none;
   color: #1F1E1E;
   font-family: "Open Sans";
 }
@@ -245,6 +249,7 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 19.07px;
+  color: #1F1E1E;
 }
 
 .page-footer {
