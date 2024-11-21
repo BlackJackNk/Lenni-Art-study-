@@ -215,6 +215,22 @@ body {
   width: calc(33.333% - 40px);
 }
 
+.card-event {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-event__picture {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.card-event__picture::before {
+  
+}
+
 .card-event__link{
   text-decoration: none;
 }
