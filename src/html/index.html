@@ -2,8 +2,9 @@
 <html lang="ru">  <!-- Указывайте язык документа -->
   <head>  <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
     <meta charset="UTF-8" />  <!-- Указывайте кодировку -->
+    <meta  name = "viewport"  content = "width=device-width, initial-scale=1"/>
     <title>Lenni Art</title> <!-- Задавайте заголовок -->
-    <link rel="stylesheet" href="styles/styles.css?ver=0">
+    <link rel="stylesheet" href="/src/styles/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
         <div class="page-header__container">
           <a href="index.html" 
               class="page-header__logo">
-            <img src="assets/images/logo.svg" 
+            <img alt="Logo" src="logo.svg" 
                   class="page-header__logo-icon"/>     
           </a>
           <nav class="page-header__nav">
@@ -35,13 +36,12 @@
         </div>
       </header>
       
-     
       <main class="main">
         <div class="home">
           <header class="main-header home__main-header">
             <h1 class="main-header__title">Арт — пространство</h1>
             <picture class="main-header__picture">
-              <img src="assets/images/LENNI.png" class="main-header__img"/>
+              <img alt="Lenni" src="LENNI.png" class="main-header__img"/>
             </picture>
             <p class="main-header__text">для людей, горящих серцем и делом
               место для настоящего
