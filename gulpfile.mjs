@@ -1,7 +1,9 @@
 import gulp from "gulp";
 import del from "del";
+
 import include from "gulp-file-include";
 import formatHtml from "gulp-format-html";
+
 import less from "gulp-less";
 import plumber from "gulp-plumber";
 import postcss from "gulp-postcss";
@@ -9,14 +11,19 @@ import autoprefixer from "autoprefixer";
 import sortMediaQueries from "postcss-sort-media-queries";
 import minify from "gulp-csso";
 import rename from "gulp-rename";
+
 import terser from "gulp-terser";
+
 import imagemin from "gulp-imagemin";
 import imagemin_gifsicle from "imagemin-gifsicle";
 import imagemin_mozjpeg from "imagemin-mozjpeg";
 import imagemin_optipng from "imagemin-optipng";
+
 import svgmin from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
+
 import server from "browser-sync";
+
 const resources = {
   html: "src/html/**/*.html",
   jsDev: "src/scripts/dev/**/*.js",
