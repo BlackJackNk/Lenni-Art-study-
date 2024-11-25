@@ -120,6 +120,7 @@ function images() {
     )
     .pipe(gulp.dest("dist/assets/images"));
 }
+
 function svgSprite() {
   return gulp
     .src(resources.svgSprite)
