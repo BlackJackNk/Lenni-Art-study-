@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head> <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
-   <!-- Указывайте кодировку -->
+  <meta charset="UTF-8" /> <!-- Указывайте кодировку -->
   <title>Lenni Art</title> <!-- Задавайте заголовок -->
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +15,12 @@
 <body class="body">
   <header class="page-header">
     <div class="page-header__container">
-      <a href="html/index.html" class="page-header__logo">Logo</a>
-      <!-- <img alt="Logo" src="logo.svg" 
+      <a href="index.html" class="page-header__logo-img">
+        <!-- <img alt="Logo" src="logo.svg" 
               class="page-header__logo-icon"/>     -->
-      <svg class="page-header__logo-img" width="202" height="147">
-        <use xlink:href="assets/icons/symbols.svg#logo">
-      </svg>
+        <svg class="page-header__logo-img" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo">
+        </svg>
       </a>
       <nav class="page-header__nav">
         <a href="events.html" class="page-header__nav-link">Мероприятия</a>
@@ -56,7 +56,7 @@
           <article class="listing__card-event card-event">
             <a href="#" class="card-event__link">
               <picture class="card-event__picture">
-                <img src="podcast.jpg" class="card-event__picture-img" alt="img" />
+                <img src="assets/images/events/podcast.jpg" class="card-event__picture-img" alt="img" />
               </picture>
               <h3 class="card-event__title">
                 Есть тема, нужно обсудить с HowStuffWorks</h3>
@@ -68,7 +68,7 @@
           <article class="listing__card-event card-event">
             <a href="#" class="card-event__link">
               <picture class="card-event__picture">
-                <img src="The Best of Sade.jpg" class="card-event__picture-img" alt="img" />
+                <img src="assets/images/events/The Best of Sade.jpg" class="card-event__picture-img" alt="img" />
               </picture>
               <h3 class="card-event__title">
                 Вечер | The Best of Sade</h3>
@@ -80,7 +80,7 @@
           <article class="listing__card-event card-event">
             <a href="#" class="card-event__link">
               <picture class="card-event__picture">
-                <img src="Malevich.jpg" class="card-event__picture-img" alt="img" />
+                <img src="assets/images/events/Malevich.jpg" class="card-event__picture-img" alt="img" />
               </picture>
               <h3 class="card-event__title">
                 Выставка Малевича в Томске</h3>
@@ -92,7 +92,7 @@
           <article class="listing__card-event card-event">
             <a href="#" class="card-event__link">
               <picture class="card-event__picture">
-                <img src="Master-class.jpg" class="card-event__picture-img" alt="img" />
+                <img src="assets/images/events/Master-class.jpg" class="card-event__picture-img" alt="img" />
               </picture>
               <h3 class="card-event__title">
                 Мастер - класс по студийной съемке Tatler</h3>
@@ -104,7 +104,7 @@
           <article class="listing__card-event card-event">
             <a href="#" class="card-event__link">
               <picture class="card-event__picture">
-                <img src="the hatters.jpg" class="card-event__picture-img" alt="img" />
+                <img src="assets/images/events/the hatters.jpg" class="card-event__picture-img" alt="img" />
               </picture>
               <h3 class="card-event__title">
                 Повеселимся на славу на концерте The Hatters</h3>
