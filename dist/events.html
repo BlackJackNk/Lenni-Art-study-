@@ -6,7 +6,7 @@
 <head> <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
   <meta charset="UTF-8" /> <!-- Указывайте кодировку -->
   <title>Lenni Art</title> <!-- Задавайте заголовок -->
-  <link rel="stylesheet" href="/src/styles/styles.less">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -15,16 +15,16 @@
 <body class="body">
   <header class="page-header">
     <div class="page-header__container">
-      <a href="/src/html/index.html" class="page-header__logo">Logo</a>
+      <a href="html/index.html" class="page-header__logo">Logo</a>
       <!-- <img alt="Logo" src="logo.svg" 
               class="page-header__logo-icon"/>     -->
       <svg class="page-header__logo-img" width="202" height="147">
-        <use xlink:href="symbols.svg#logo">
+        <use xlink:href="assets/icons/symbols.svg#logo">
       </svg>
       </a>
       <nav class="page-header__nav">
-        <a href="/src/html/events.html" class="page-header__nav-link">Мероприятия</a>
-        <a href="/src/html/event.html" class="page-header__nav-link">Блог</a>
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="event.html" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О Нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
@@ -44,7 +44,7 @@
           <article class="listing__card-event card-event">
             <a href="#" class="card-event__link">
               <picture class="card-event__picture">
-                <img src="nirvana.jpg" class="card-event__picture-img" alt="img" />
+                <img src="assets/images/events/nirvana.jpg" class="card-event__picture-img" alt="img" />
               </picture>
               <h3 class="card-event__title">
                 Собираемся и слушаем альбом Nirvana. Nirvana</h3>
