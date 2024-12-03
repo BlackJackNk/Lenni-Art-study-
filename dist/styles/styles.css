@@ -10,13 +10,13 @@
   font-weight: 300;
   font-style: normal;
 }
-html,
-body {
+.html,
+.body {
   width: 100%;
   margin: 0;
   padding: 0;
 }
-body {
+.body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -61,8 +61,18 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
 .btn {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px 40px;
@@ -81,10 +91,9 @@ img {
   overflow: hidden;
   cursor: pointer;
 }
-.btn:hover {
-  background-color: #1f1e1e;
-  color: #ffffff;
-  /*hover - выделяет кнопку чёрным цветом при наведении*/
+.btn:active {
+  background-color: black;
+  color: white;
 }
 .event-card {
   -webkit-box-sizing: border-box;
@@ -268,6 +277,13 @@ img {
 .page-header__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,11 +293,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  max-width: 1414px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 .page-header__logo {
   -ms-flex-negative: inherit;
@@ -380,4 +391,27 @@ img {
 }
 .home {
   padding-top: 147px;
+}
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.display-none {
+  display: none;
+}
+.color-red {
+  color: #bc3324;
+}
+@media (hover: hover) {
+  .btn:hover {
+    background-color: #1f1e1e;
+    color: #ffffff;
+    /*hover - выделяет кнопку чёрным цветом при наведении*/
+  }
 }

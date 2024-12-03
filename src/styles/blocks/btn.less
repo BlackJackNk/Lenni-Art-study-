@@ -1,5 +1,5 @@
 .btn {
-    display: inline-block;
+    display: inline-flex;
     box-sizing: border-box;
     padding: 15px 40px;
     border: 1px solid @black;
@@ -15,10 +15,16 @@
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
     overflow: hidden;
     cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: @black;
-    color: @white;
-    /*hover - выделяет кнопку чёрным цветом при наведении*/
+    
+    &:active {
+      background-color: black;
+      color: white;
+    }
+    &:hover {
+      @media (hover: hover) {
+        background-color: @black;
+        color: @white;
+        /*hover - выделяет кнопку чёрным цветом при наведении*/
+      }
+    }
   }

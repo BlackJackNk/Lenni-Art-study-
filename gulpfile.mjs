@@ -106,7 +106,7 @@ function copy() {
 
 function images() {
     return gulp
-        .src(resources.images, {encoding: false})
+        .src(resources.images)
         .pipe(
             imagemin([
                 imagemin_gifsicle({interlaced: true}),
