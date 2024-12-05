@@ -95,6 +95,32 @@ button {
   background-color: black;
   color: white;
 }
+.section-title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 624px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 62px;
+  margin: 150px auto 150px;
+  padding: 8px 45px;
+  background-color: #1f1e1e;
+  color: #ffffff;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-style: 36px;
+  line-height: 1.277;
+  text-align: center;
+  text-transform: uppercase;
+}
 .event-card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -104,12 +130,14 @@ button {
   display: block;
   margin-bottom: 25px;
 }
-.event-card__picture::before {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-top: 107.16%;
-}
+/*
+  .event-card__picture::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 107.160%;
+  }
+  */
 .event-card__picture-img {
   position: absolute;
   top: 0;
@@ -165,16 +193,33 @@ button {
   color: #1f1e1e;
 }
 .listing {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.listing__events-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 120px 60px;
+  margin: 0 -30px -120px;
 }
-.listing__card-event {
-  max-width: 405px;
-  width: calc(33.333% - 40px);
+.listing__event-card {
+  width: calc(33.3333% - 60px);
+  margin: 0 30px 120px;
 }
 .reserve {
   display: grid;
@@ -203,47 +248,44 @@ button {
   text-align: center;
 }
 .events {
-  padding-top: 147px;
+  padding-top: 140px 0 100px;
 }
-.events__container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  max-width: 1414px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+.events__listing {
+  margin-bottom: 100px;
 }
-.events__title {
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.title {
-  margin: 0 0 150px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 7px 45px 9px;
-  max-width: 624px;
-  width: 100%;
-  text-align: center;
-  background-color: #1f1e1e;
-  text-transform: uppercase;
-  font-family: "Lora", serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 500;
-  color: #ffffff;
-}
+/*
+  .events__container {
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;  
+  }
+  
+  .events__title {
+    align-self: center;
+  }
+  
+  .title {
+    margin: 0 0 150px;
+    box-sizing: border-box;
+    padding: 7px 45px 9px;
+    max-width: 624px;
+    width: 100%;
+    text-align: center;
+    background-color: @black;
+    text-transform: uppercase;
+    font-family: @font2;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    color: @white;
+  }
+    */
 .event {
   padding: 40px 0 1000px;
 }
@@ -407,6 +449,12 @@ button {
 }
 .color-red {
   color: #bc3324;
+}
+.width_624 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 624px;
 }
 @media (hover: hover) {
   .btn:hover {
