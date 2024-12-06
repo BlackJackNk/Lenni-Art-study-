@@ -339,8 +339,11 @@ button {
 .form__field--mb30 {
   margin-bottom: 30px;
 }
+.form__field--btnmt40 {
+  margin-top: 40px;
+}
 .form__field__btn {
-  max-width: 400px;
+  max-width: 869px;
   width: 100%;
 }
 .form__field__check--mb40 {
@@ -707,7 +710,7 @@ button {
 }
 .pp__form {
   margin: auto;
-  max-width: 870px;
+  max-width: 947px;
 }
 .container {
   -webkit-box-sizing: border-box;
