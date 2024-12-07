@@ -93,6 +93,7 @@ button {
 }
 .btn:active {
   background-color: black;
+  border: 1px solid #1f1e1e;
   color: white;
 }
 .section-title {
@@ -339,12 +340,23 @@ button {
 .form__field--mb30 {
   margin-bottom: 30px;
 }
-.form__field--btnmt40 {
+.form__field--btnpp_submit,
+.form__field btnpp_close {
   margin-top: 40px;
+  width: 401px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
 }
-.form__field__btn {
-  max-width: 869px;
-  width: 100%;
+.form__field--btnpp_close {
+  margin-top: 40px;
+  width: 401px;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
 }
 .form__field__check--mb40 {
   margin-bottom: 40px;
