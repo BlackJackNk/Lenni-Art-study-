@@ -341,7 +341,7 @@ button {
   margin-bottom: 30px;
 }
 .form__field--btnpp_submit,
-.form__field btnpp_close {
+.form__field--btnpp_close {
   margin-top: 40px;
   width: 401px;
   -webkit-box-pack: center;
@@ -350,13 +350,7 @@ button {
   margin-right: 10px;
 }
 .form__field--btnpp_close {
-  margin-top: 40px;
-  width: 401px;
   border: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 10px;
 }
 .form__field__check--mb40 {
   margin-bottom: 40px;
