@@ -20,7 +20,9 @@
             </p>  
           </header>
           <section class="offers home__offers"></section>
-          <section class="about home_about"></section>
+          
+          @@include('blocks/about.html', (class: 'home__about'))
+
           <section class="upcomming home__upcomming"></section>
           <section class="listing home__listing"></section>
           <section class="contacts home__contacts"></section>
@@ -31,6 +33,6 @@
 
     @@include('blocks/page-footer.html')  
 
-    @@include('blocks/event-pp.html')
+<!--   @@include('blocks/event-pp.html') --> 
   </body>
 </html>
