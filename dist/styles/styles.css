@@ -537,9 +537,7 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
-  -webkit-columns: #1f1e1e;
-     -moz-columns: #1f1e1e;
-          columns: #1f1e1e;
+  color: #1f1e1e;
 }
 .contacts-item_info[href] {
   text-decoration: none;
@@ -549,7 +547,7 @@ button {
 .contacts-item_info[href]:active {
   color: #bc3324;
 }
-.contacts-item_info[href]:last-child {
+.contacts-item_info:last-child {
   margin-bottom: 0;
 }
 .contacts__container {
