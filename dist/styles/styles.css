@@ -786,7 +786,8 @@ button {
   margin-left: auto;
 }
 .about__text--mb90 {
-  margin-bottom: 90px;
+  margin-top: 155px;
+  margin-bottom: 89px;
 }
 .about__picture {
   grid-area: picture1;
