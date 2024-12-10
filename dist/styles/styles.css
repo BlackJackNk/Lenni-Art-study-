@@ -509,6 +509,9 @@ button {
           align-items: center;
   gap: 54px;
 }
+.contacts-item p {
+  margin: 0 0 5px;
+}
 .contacts-item__img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,23 +534,23 @@ button {
   line-height: normal;
   color: #1f1e1e;
 }
-.contacts-item_info {
+.contacts-item__info {
+  display: inline-block;
   margin: 0 0 5px;
-  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
   color: #1f1e1e;
 }
-.contacts-item_info[href] {
+.contacts-item__info[href] {
   text-decoration: none;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-.contacts-item_info[href]:active {
+.contacts-item__info[href]:active {
   color: #bc3324;
 }
-.contacts-item_info:last-child {
+.contacts-item__info:last-child {
   margin-bottom: 0;
 }
 .contacts__container {
@@ -577,6 +580,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 67px;
+  margin-right: 30px;
 }
 .events {
   padding-top: 140px 0 100px;
@@ -997,7 +1001,7 @@ button {
     color: #ffffff;
     /*hover - выделяет кнопку чёрным цветом при наведении*/
   }
-  .contacts-item_info[href]:hover {
+  .contacts-item__info[href]:hover {
     color: #bc3324;
   }
   .pp__sticky-btn:hover {
