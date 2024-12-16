@@ -15,8 +15,17 @@
     margin: 0 30px 120px;
   }
 
-  &__link {
+  &__link-link {
+    padding-top: 80px;
+    text-align: right;
     text-decoration: none;
     color: inherit;
+    color: @black;
+    text-decoration-color: transparent;
+    transition: color 0.2s, text-decoration-color 0.2s;
+    &:hover {
+      color: @red;
+      text-decoration-color: @red;
+    }
   }
 }
