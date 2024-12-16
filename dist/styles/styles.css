@@ -474,6 +474,12 @@ button {
   width: calc(33.3333% - 60px);
   margin: 0 30px 120px;
 }
+.home {
+  padding: 100px 0;
+}
+.home__listing {
+  margin-bottom: 95px;
+}
 .reserve {
   display: grid;
   gap: 65px 11%;
