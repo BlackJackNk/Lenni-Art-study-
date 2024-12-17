@@ -61,13 +61,53 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+input,
+textarea,
+select,
 button {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
   color: black;
   font-family: "Open Sans", sans-serif;
+}
+button {
   cursor: pointer;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #6c6c6c;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #6c6c6c;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #6c6c6c;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #6c6c6c;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+textarea {
+  resize: none;
 }
 .btn {
   display: -webkit-inline-box;
@@ -306,23 +346,18 @@ button {
   text-align: center;
 }
 .field__input::-webkit-input-placeholder {
-  color: #6c6c6c;
   font-size: 16px;
 }
 .field__input::-moz-placeholder {
-  color: #6c6c6c;
   font-size: 16px;
 }
 .field__input:-ms-input-placeholder {
-  color: #6c6c6c;
   font-size: 16px;
 }
 .field__input::-ms-input-placeholder {
-  color: #6c6c6c;
   font-size: 16px;
 }
 .field__input::placeholder {
-  color: #6c6c6c;
   font-size: 16px;
 }
 .field__label {
@@ -1015,6 +1050,7 @@ button {
   margin-bottom: 95px;
 }
 .pp {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
