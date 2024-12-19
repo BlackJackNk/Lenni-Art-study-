@@ -10,8 +10,16 @@
     @@include('blocks/page-header.html')       
      
       <main class="main">
-        <!-- Здесь будут хлебные крошки -->
+
+        @@include('blocks/breadcrumbs.html')       
+        
         <article class="event">
+
+          <div class="event__container">
+            <div class="event__content content"></div>
+          </div>
+
+          <!-- prettier-ignore -->
           @@include('blocks/reserve.html', {"class": "event__reserve"})
         </article>
       </main>
