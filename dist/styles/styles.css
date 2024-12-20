@@ -184,10 +184,16 @@ textarea {
   color: #ffffff;
   font-family: "Lora", serif;
   font-weight: 500;
-  font-style: 36px;
+  font-size: 36px;
   line-height: 1.277;
   text-align: center;
   text-transform: uppercase;
+}
+.section-title--fs22 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.44px;
 }
 .radio__label {
   display: block;
@@ -720,12 +726,32 @@ textarea {
 }
 .reserve__checks {
   grid-area: checks;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .reserve__order {
   grid-area: order;
 }
 .reserve__scheme {
   grid-area: scheme;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .reserve__legend {
   grid-area: legend;
@@ -741,15 +767,57 @@ textarea {
           align-items: flex-end;
   text-align: right;
 }
+.reserve__section-title {
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+.reserve__section-title--mb30 {
+  margin-bottom: 30px;
+}
+.reserve__check {
+  margin-bottom: 10px;
+}
+.reserve__check:last-child {
+  margin-bottom: 0;
+}
+.reserve__scheme-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 780px;
+}
+.reserve__scheme-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 40px;
+  padding: 6px 56px;
+  background-color: #1f1e1e;
+  color: #ffffff;
+  font-weight: 600;
+  font-style: 16px;
+  line-height: 22px;
+}
 .reserve__scheme-wrapper {
   position: relative;
   width: 100%;
-}
-.reserve__scheme-wrapper::after {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-top: 51.15384%;
 }
 .reserve__scene {
   position: absolute;
