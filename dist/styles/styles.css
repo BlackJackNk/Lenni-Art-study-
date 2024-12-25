@@ -2290,6 +2290,10 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .main-header__choice-title {
     margin: 40px 0 25px;
@@ -2313,7 +2317,7 @@ textarea {
             justify-content: center;
     width: 272px;
     height: 52px;
-    margin: 0;
+    margin-bottom: 25px;
   }
   .about__container {
     padding-left: 20px;
