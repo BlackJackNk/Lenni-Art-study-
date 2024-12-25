@@ -23,6 +23,7 @@
 
   &__order {
     grid-area: order;
+    border-bottom: 20px;
   }
 
   &__scheme {
@@ -48,6 +49,10 @@
     &--mb30 {
       margin-bottom: 30px;
     }
+  }
+
+  &__tickets-list {
+    margin-bottom: 10px;
   }
 
   &__check {
@@ -96,19 +101,44 @@
     justify-content: space-between;
     align-items: baseline;
   }
+
   &__qty {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: @black;
+
     &::after {
       content: " " attr(data-caption) " | " attr(data-price);
     }
   }
+
   &__sum {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    color: @black;  
+
     &::after {
       content: attr(data-currency);
       margin-left: 4px;
       font-size: 0.95em;
     }
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
   }
+  
   &__total {
+    text-align: center;
+    margin-bottom: 53px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: @black;
+
     &::before {
       content: attr(data-caption);
       margin-right: 30px;
@@ -118,6 +148,18 @@
       margin-left: 4px;
       font-size: 0.95em;
     }
+  }
+
+  &__submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 131px;
+    gap: 10px;
+    background: @red;
+    color: @white;
+    border: none;
   }
 
   &__price {

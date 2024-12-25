@@ -324,7 +324,6 @@ textarea {
 }
 .check__label {
   font-size: 14px;
-  color: #1f1e1e;
 }
 .field__title {
   margin: 0 0 10px;
@@ -1066,6 +1065,7 @@ textarea {
 }
 .reserve__order {
   grid-area: order;
+  border-bottom: 20px;
 }
 .reserve__scheme {
   grid-area: scheme;
@@ -1102,6 +1102,9 @@ textarea {
 }
 .reserve__section-title--mb30 {
   margin-bottom: 30px;
+}
+.reserve__tickets-list {
+  margin-bottom: 10px;
 }
 .reserve__check {
   margin-bottom: 10px;
@@ -1164,13 +1167,37 @@ textarea {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+.reserve__qty {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1f1e1e;
+}
 .reserve__qty::after {
   content: " " attr(data-caption) " | " attr(data-price);
+}
+.reserve__sum {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  color: #1f1e1e;
 }
 .reserve__sum::after {
   content: attr(data-currency);
   margin-left: 4px;
   font-size: 0.95em;
+}
+.reserve__sum:last-child {
+  margin-bottom: 15px;
+}
+.reserve__total {
+  text-align: center;
+  margin-bottom: 53px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #1f1e1e;
 }
 .reserve__total::before {
   content: attr(data-caption);
@@ -1180,6 +1207,26 @@ textarea {
   content: attr(data-currency);
   margin-left: 4px;
   font-size: 0.95em;
+}
+.reserve__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 131px;
+  gap: 10px;
+  background: #bc3324;
+  color: #ffffff;
+  border: none;
 }
 .reserve__price {
   display: -webkit-box;
@@ -1469,17 +1516,31 @@ textarea {
   max-width: 830px;
   margin-bottom: 80px;
 }
+.event h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1f1e1e;
+}
 .event ul,
 .event ol {
   margin: 0;
   padding-left: 17px;
   text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #1f1e1e;
+}
+.event p {
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: #1f1e1e;
 }
 .event ul > li::marker {
   color: #bc3324;
-}
-.event li {
-  padding: 5px;
 }
 .page-header {
   position: fixed;
