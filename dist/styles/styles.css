@@ -1397,6 +1397,56 @@ textarea {
   line-height: 21.79px;
   color: #1f1e1e;
 }
+.events__infobox {
+  max-width: 1334px;
+}
+.events__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "information contact handshake";
+  justify-items: center;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+}
+.events__information {
+  grid-area: information;
+  justify-items: center;
+  max-width: 401px;
+}
+.events__contact {
+  grid-area: contact;
+  justify-items: center;
+  max-width: 401px;
+}
+.events__handshake {
+  grid-area: handshake;
+  justify-items: center;
+  max-width: 401px;
+}
+.events h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1f1e1e;
+}
+.events p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #1f1e1e;
+}
 .event {
   padding: 40px 0 150px;
 }
@@ -2134,6 +2184,20 @@ textarea {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .events__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "information contact" "handshake .";
+    justify-items: center;
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
+  }
+  .events__handshake {
+    grid-column: span 2;
+    margin-top: 50px;
+  }
   .event__container {
     padding-left: 20px;
     padding-right: 20px;
@@ -2161,6 +2225,27 @@ textarea {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 369px) {
+  .events__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "information" "contact" "handshake";
+    justify-items: center;
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
+  }
+  .events__information {
+    margin-top: 40px;
+  }
+  .events__contact {
+    margin-top: 40px;
+  }
+  .events__handshake {
+    margin-top: 40px;
   }
 }
 @media (hover: hover) {
