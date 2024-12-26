@@ -48,6 +48,8 @@
 
   &__choice {
     margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px; 
   }
 
   &__button {
@@ -60,11 +62,20 @@
     padding-left: 20px;
     padding-right: 20px; 
 
+    @media @bw1340 {
+      max-width: 604px;
+    }
+
     @media @bw768 {
+      max-width: 566px;
+    }
+
+    @media @bw600 {
+      max-width: 280px;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      flex-direction: column-reverse;
+      flex-direction: column-reverse;  
     }
   }
 
@@ -74,14 +85,26 @@
     font-size: 22px;
     line-height: 30px;
     text-align: center;
-    letter-spacing: 0.02em;
     text-transform: uppercase;
     color: @black;
     margin: 100px 0 45px;
-    margin-left: 25px;
+    margin-left: 27px;
 
     @media @bw768 {
+      margin: 75px 0 45px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20.48px;
+      text-align: center;
+      margin-left: 33px;
+    }
+
+    @media @bw600 {
       margin: 40px 0 25px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      text-align: center;    
     }
   }
 
@@ -101,14 +124,17 @@
     border: none;
 
     @media @bw768 {
-      margin-bottom: 25px;
-      margin: 0;
-      align-items: center;
-      justify-content: center;
+    }
+
+    @media @bw600 {
+      width: 280px;
+      height: 49px;
     }
   }
 
   &__btn-rent {
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;   
     width: 246px;
     height: 52px;
@@ -120,11 +146,14 @@
     line-height: 22px;
 
     @media @bw768 {
-      align-items: center;
-      justify-content: center;
-      width: 272px;
+      width: 238px;
       height: 52px;
+    }
+
+    @media @bw600 {
       margin-bottom: 25px;
+      width: 280px;
+      height: 49px;
     }
   }
 }
