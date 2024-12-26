@@ -18,7 +18,7 @@
   }
   
   &__text {
-    margin: 0 auto;
+    margin: 0 auto 100px;
     max-width: 990px;
     width: 100%;
   }
@@ -47,27 +47,26 @@
   }
 
   &__choice {
-    margin-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px; 
+    padding: 0;
+    display: flex; 
+    flex-direction: column; 
+    max-width: 624px;
+    margin: auto;
   }
 
   &__button {
-    max-width: 624px;
-    margin: auto;
     display: flex; 
-    flex-shrink: 0;   
-    align-items: center;
+    width: 624px;
     justify-content: space-between; 
-    padding-left: 20px;
-    padding-right: 20px; 
 
     @media @bw1340 {
       max-width: 604px;
+      margin: auto;
     }
 
     @media @bw768 {
       max-width: 566px;
+      margin: auto;
     }
 
     @media @bw600 {
@@ -76,6 +75,7 @@
       align-items: center;
       justify-content: space-between;
       flex-direction: column-reverse;  
+      margin: auto;
     }
   }
 
@@ -87,7 +87,7 @@
     text-align: center;
     text-transform: uppercase;
     color: @black;
-    margin: 100px 0 45px;
+    margin: 0 0 45px;
     margin-left: 27px;
 
     @media @bw768 {
@@ -121,10 +121,8 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
+    padding: 0;
     border: none;
-
-    @media @bw768 {
-    }
 
     @media @bw600 {
       width: 280px;
@@ -144,6 +142,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
+    padding: 0;
 
     @media @bw768 {
       width: 238px;
