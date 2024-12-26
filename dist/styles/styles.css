@@ -187,7 +187,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   min-height: 62px;
-  margin: 100px auto 150px;
+  margin: 0 auto 150px;
   padding: 8px 45px;
   background-color: #1f1e1e;
   color: #ffffff;
@@ -1342,9 +1342,6 @@ textarea {
 .article__content {
   max-width: 830px;
 }
-.home {
-  padding: 100px 0;
-}
 .home__listing {
   margin-bottom: 95px;
 }
@@ -1768,7 +1765,7 @@ textarea {
   color: #bc3324;
 }
 .main-header {
-  padding: 100px 0;
+  padding: 200px 0;
 }
 .main-header__title,
 .main-header__text {
@@ -1782,7 +1779,7 @@ textarea {
   padding-right: 40px;
 }
 .main-header__title {
-  margin: 0 0 70px;
+  margin: 0 auto 70px;
 }
 .main-header__text {
   margin: 0 auto 100px;
@@ -2073,6 +2070,9 @@ textarea {
   .section-title {
     max-width: 566px;
   }
+  .section-title {
+    margin: 0 auto 130px;
+  }
   .breadcrumbs {
     padding-left: 30px;
     padding-right: 30px;
@@ -2109,6 +2109,16 @@ textarea {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .main-header__title {
+    max-width: 748px;
+    font-size: 35px;
+    line-height: 44.8px;
+  }
+  .main-header__text {
+    max-width: 748px;
+    font-size: 35px;
+    line-height: 44.8px;
+  }
   .main-header__button {
     max-width: 604px;
     margin: auto;
@@ -2125,11 +2135,26 @@ textarea {
     max-width: 566px;
   }
 }
+@media (max-width: 829px) {
+  .main-header__title {
+    max-width: 688px;
+    font-size: 30px;
+    line-height: 38.4px;
+  }
+  .main-header__text {
+    max-width: 688px;
+    font-size: 30px;
+    line-height: 38.4px;
+  }
+}
 @media (max-width: 767px) {
   .title {
     margin-bottom: 40px;
     font-size: 20px;
     line-height: 26px;
+  }
+  .section-title {
+    margin: 0 auto 100px;
   }
   .breadcrumbs {
     padding-left: 20px;
@@ -2294,12 +2319,28 @@ textarea {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .main-header {
+    padding: 130px 0;
+  }
+  .main-header__title {
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 24.4px;
+    margin: 0 auto 51px;
+  }
+  .main-header__text {
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 24.4px;
+    margin-top: -30px;
+    margin-bottom: 73px;
+  }
   .main-header__button {
     max-width: 566px;
     margin: auto;
   }
   .main-header__choice-title {
-    margin: 75px 0 45px;
+    margin: 0 0 45px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20.48px;
@@ -2320,6 +2361,25 @@ textarea {
   }
 }
 @media (max-width: 599px) {
+  .section-title {
+    margin: 0 auto 80px;
+  }
+  .main-header {
+    padding: 100px 0;
+  }
+  .main-header__title {
+    max-width: 290px;
+    font-size: 13px;
+    line-height: 16.64px;
+    margin: 0 auto 29px;
+  }
+  .main-header__text {
+    max-width: 290px;
+    font-size: 13px;
+    line-height: 16.64px;
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
   .main-header__button {
     max-width: 280px;
     -ms-flex-wrap: wrap;
@@ -2337,7 +2397,7 @@ textarea {
     margin: auto;
   }
   .main-header__choice-title {
-    margin: 40px 0 25px;
+    margin: 0 0 25px;
     font-weight: 400;
     font-size: 13px;
     line-height: 17px;
