@@ -2135,6 +2135,16 @@ textarea {
     max-width: 566px;
   }
 }
+@media (max-width: 1019px) {
+  .about__block2 {
+    grid-template-areas: "picture1 picture1 picture1" "title picture2 picture2" "text picture2 picture2";
+    row-gap: 50px;
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media (max-width: 829px) {
   .main-header__title {
     max-width: 688px;
